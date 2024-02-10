@@ -1,0 +1,27 @@
+.container{
+display: grid;
+grid-template-rows: 100px 100px 100px 100px;
+grid-template-columns: 100px 100px 100px 100px ;
+border: 1px solid red;
+}
+.item{
+    border: 1px solid;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.item-1{
+  grid-row-start: 1;
+   grid-row-end:3 ;
+   grid-column-start:1 ;
+    grid-column-end:4 ;  
+}
+
+.item-2{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.item-3{
+    grid-area: 3/-1/-1/3;
+}
